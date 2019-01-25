@@ -17,11 +17,17 @@ I did some tuning and find the following hyperparameters to work reasonally well
 
 BERT_base: batch size: 32, learning rate: 5e-5, training epoch: 3
 
-BERT_large: batch size: 4, learning rate: 1e-5 (DO NOT SET IT TOO LARGE), training epoch: 2
+BERT_large: batch size: 8, learning rate: 1e-5 (DO NOT SET IT TOO LARGE), training epoch: 2
 
 ### Results
+Model | RACE | RACE-M | RACE-H 
+--- | --- | --- | --- |
+BERT_base | 65.0 | 71.7 | 62.3 
+BERT_large | 67.9 | 75.6 | 64.7
 
 
+### More Details
+I have written a short report (BERT_RACE.pdf) in this repo describing the details.
 
 
 
