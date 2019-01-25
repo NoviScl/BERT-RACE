@@ -25,9 +25,12 @@ Model | RACE | RACE-M | RACE-H
 BERT_base | 65.0 | 71.7 | 62.3 
 BERT_large | 67.9 | 75.6 | 64.7
 
+You can compare them with other results on the [leaderboard](http://www.qizhexie.com/data/RACE_leaderboard).
+
+BERT large achieves the current (Jan 2019) best result. Looking forward to new models that can beat BERT!
 
 ### More Details
-I have written a short report (BERT_RACE.pdf) in this repo describing the details.
+I have written a short [report](./BERT_RACE.pdf) in this repo describing the details.
 
 
 
