@@ -3,7 +3,7 @@
 By: Chenglei Si (River Valley High School)
 
 ### Implementation
-This work is based on Pytorch implementation of BERT (https://github.com/huggingface/pytorch-pretrained-BERT). I did some modification so that it can work on multiple choice machine comprehension.
+This work is based on Pytorch implementation of BERT (https://github.com/huggingface/pytorch-pretrained-BERT). I adapted the original BERT model to work on multiple choice machine comprehension.
 
 ### Environment:
 The code is tested with Python3.6 and Pytorch 1.0.0.
