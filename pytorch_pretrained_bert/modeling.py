@@ -602,7 +602,9 @@ class BertModel(PreTrainedBertModel):
         self.embeddings = BertEmbeddings(config)
         self.encoder = BertEncoder(config)
         self.pooler = BertPooler(config)
+        # self.trans = nn.Linear(config.num_hidden_layers*config.hidden_size, config.hidden_size)
         self.apply(self.init_bert_weights)
+        self.config = config
 
     def forward(self, input_ids, token_type_ids=None, attention_mask=None, output_all_encoded_layers=True):
         if attention_mask is None:
@@ -631,6 +633,11 @@ class BertModel(PreTrainedBertModel):
                                       output_all_encoded_layers=output_all_encoded_layers)
         sequence_output = encoded_layers[-1]
         pooled_output = self.pooler(sequence_output)
+        # all_first = []
+        # for seq_output in encoded_layers:
+        #     all_first.append(seq_output[:, 0]) # each (N, hid)
+        # pooled_output = torch.cat(all_first, 1)
+        # pooled_output = nn.Tanh()(self.trans(pooled_output))
         if not output_all_encoded_layers:
             encoded_layers = encoded_layers[-1]
         return encoded_layers, pooled_output
