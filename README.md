@@ -3,7 +3,7 @@
 By: Chenglei Si (River Valley High School)
 
 ### Update:
-XLNet has achieved impressive gains on RACE recently. You may refer to my other repo: https://github.com/NoviScl/XLNet_DREAM to see how to use XLNet for multiple-choice machine comprehension problems. 
+XLNet has achieved impressive gains on RACE recently. You may refer to my other repo: https://github.com/NoviScl/XLNet_DREAM to see how to use XLNet for multiple-choice machine comprehension problems. Huggingface has updated their work [pytorch_trainsformers](https://github.com/huggingface/pytorch-transformers), please refer to their repo for the documentation and more details of the new version. 
 
 ### Implementation
 This work is based on Pytorch implementation of BERT (https://github.com/huggingface/pytorch-pretrained-BERT). I adapted the original BERT model to work on multiple choice machine comprehension.
